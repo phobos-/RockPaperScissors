@@ -9,6 +9,8 @@ class ParserTest extends FlatSpec with Matchers {
     getShape("s") shouldBe valid(Scissors)
     getShape("r") shouldBe valid(Rock)
     getShape("p") shouldBe valid(Paper)
+    getShape("v") shouldBe valid(Spock)
+    getShape("l") shouldBe valid(Lizard)
   }
 
   it should "get the shape based on just lowercased first letter" in {

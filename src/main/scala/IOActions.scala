@@ -19,7 +19,7 @@ object IOActions {
     in.map(Parser.getShape)
       .flatMap(
         _.fold(
-          _ => {println("Incorrect shape. Please, select (R)ock, (P)aper or (S)cissors"); inShape(in)},
+          _ => {println("Incorrect shape. Please, select (R)ock, (P)aper, (S)cissors, (L)izard or (V)Spock"); inShape(in)},
           s => IO.delay(s)))
       .map(shape => { println(shape); shape })
 

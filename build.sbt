@@ -1,4 +1,4 @@
-name := "rps"
+name := "rpsls"
 
 version := "1.0"
 
